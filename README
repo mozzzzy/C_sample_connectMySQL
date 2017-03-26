@@ -1,0 +1,33 @@
+2016/08/17
+program : test_connect_mysql
+
+description :	Test program connecting to mysql.
+
+usage :
+	(create database in mysql)
+		# mysql -u root -p
+			mysql> create database C_connect;
+			mysql> use C_connect;
+			mysql> create table table1(colmun1 VARCHAR(1024), colmun2 INT);
+
+				C_connect
+				+---------------------------------------------------------------+
+				|								|
+				|	table1------------------+-----------------------+	|
+				|	|column1(varchar(1024))	|column2(int)		|	|
+				|	+-----------------------+-----------------------+	|
+				|	|			|			|	|
+				|	+-----------------------+-----------------------+	|
+				|	|			|			|	|
+				|	+-----------------------+-----------------------+	|
+				|								|
+				+---------------------------------------------------------------+
+
+			mysql> exit
+
+
+	(compile) 
+		# make
+
+	(execute)
+		./connect_mysql
